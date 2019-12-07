@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CTSirtsDemo]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.ctshirts.listeners.CustomListeners"/>
+  </listeners>
+  <test name="Create Account Test(failed)">
+    <classes>
+      <class name="com.ctshirts.myaccount.CreateAccount">
+        <methods>
+          <include name="createAccountTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.ctshirts.myaccount.CreateAccount -->
+    </classes>
+  </test> <!-- Create Account Test(failed) -->
+</suite> <!-- Failed suite [CTSirtsDemo] -->
